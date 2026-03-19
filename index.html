@@ -1421,9 +1421,9 @@
         const isChild = document.getElementById('isChild').checked;
         if(isChild){
           const age = yearsBetween(dn, data);
-          if(age < 0 || age > 10){
+          if(age < 0 || age > 18){
             markInvalid(document.getElementById('dn'));
-            errors.push('Criança 0-10 anos: idade (DN vs Data) deve estar entre 0 e 10');
+            errors.push('Criança 0-18 anos: idade (DN vs Data) deve estar entre 0 e 10');
           }
         }
       }
